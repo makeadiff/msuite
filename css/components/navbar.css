@@ -2,10 +2,11 @@
 .navbar{
   position: sticky;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .navbar-dark{
-  background: var(--gray-dark);
+  background: var(--gray90);
   border-bottom: 2px solid var(--mad-red);
 }
 
@@ -44,7 +45,7 @@
 }
 
 .navbar-light span.user_name{
-  color: var(--gray-dark);
+  color: var(--gray90);
 }
 
 .navbar i.icon{

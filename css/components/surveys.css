@@ -1,0 +1,47 @@
+.survey.container{
+  padding:15px;
+  background: #FFF;
+  border-radius: 5px;
+  /* box-shadow: 0 0 20px #AAA; */
+}
+
+
+@media (max-width: 500px){
+  .survey.container{
+    width:95%;
+  }
+}
+
+.survey-area{
+  margin-top: 10px;
+  border-top: 1px solid var(--cyan90);
+  padding-top: 10px;
+}
+
+.question-area{
+  padding: 15px;
+  border-radius: 5px;
+  background: var(--gray10);
+  margin-bottom: 15px;
+  box-shadow: 0 0 2px #CCC;
+}
+
+.question{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.question-description {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.response{
+  padding: 0 15px;
+}
+
+.choice{
+  padding: 3px 0 3px 0;
+}

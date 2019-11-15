@@ -13,10 +13,7 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
-  --light-gray: #FAFAFA;
   --gray: #6c757d;
-  --gray-dark: #222;
-  --gray-dark-light: #333;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -25,4 +22,16 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+
+  /* Material UI Colors */
+  --cyan80: #00838F;
+  --cyan90: #006064;
+
+
+  --gray00: #FAFAFA;
+  --gray10: #F5F5F5;
+  --gray70: #616161;
+  --gray80: #424242;
+  --gray90: #212121;
+
 }

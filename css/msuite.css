@@ -6,13 +6,17 @@ Author: Rohit Nair for Make A Difference, India
 */
 
 @import "./bootstrap.css";
+@import "./components/color.css";
 /* @import "./materialize.css"; */
 @import "./components/animation.css";
-@import "./components/color.css";
+@import "./components/input.css";
+@import "./components/button.css";
+
 @import "./components/navbar.css";
 @import "./components/text.css";
 @import "./components/card.css";
 @import "./components/notification.css";
+@import "./components/surveys.css";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 /* Ionic Icon Package */
 @import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
@@ -21,6 +25,7 @@ Author: Rohit Nair for Make A Difference, India
 
 body{
   font-family: 'Roboto',sans-serif !important;
+  background: #555;
 }
 
 .elements{
@@ -33,7 +38,7 @@ body{
 }
 
 pre{
-  background: var(--light-gray);
+  background: var(--gray00);
   padding: 10px;
   margin-bottom: 0px;
   height: 100%;
@@ -66,7 +71,7 @@ pre{
 }
 
 .code:hover pre{
-  background: var(--gray-dark-light);
+  background: var(--80);
   color: #FFF;
   height: 100%;
 }
