@@ -1,4 +1,4 @@
-cd <?php
+<?php
 
   $components = [
     'navbar' => 'Navbar',
@@ -44,7 +44,7 @@ cd <?php
     <link rel="stylesheet" href="./css/msuite.css">
 
   </head>
-  <body>
+  <body class="dark">
     <span id="navbar_div">
 <?php include 'components/navbar.php'; ?>
     </span>
@@ -185,17 +185,17 @@ cd <?php
           <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
+        </div>        
         <div class="toast-body">
           Hello, world! This is a toast message.
         </div>
       </div>
 
-      <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+      <div id="copy-successful" class="toast toast-fixed top-right" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
         <div class="toast-body">
-          Hello, world! This is a toast message.
+          Code to Clipboard.
         </div>
-      </div> -->
+      </div>
 
     </div>
 

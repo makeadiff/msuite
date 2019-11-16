@@ -21,9 +21,9 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
 
   /* Material UI Colors */
+  --cyan70: #0097A7;
   --cyan80: #00838F;
   --cyan90: #006064;
 
@@ -33,5 +33,9 @@
   --gray70: #616161;
   --gray80: #424242;
   --gray90: #212121;
+  --black : #000000;
+
+  /* Teal */
+  --teal50: #009688;
 
 }

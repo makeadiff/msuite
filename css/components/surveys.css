@@ -2,7 +2,8 @@
   padding:15px;
   background: #FFF;
   border-radius: 5px;
-  /* box-shadow: 0 0 20px #AAA; */
+  color: var(--black);
+  margin-bottom: 20px;
 }
 
 
@@ -24,6 +25,7 @@
   background: var(--gray10);
   margin-bottom: 15px;
   box-shadow: 0 0 2px #CCC;
+  color: var(--black);
 }
 
 .question{
@@ -44,4 +46,8 @@
 
 .choice{
   padding: 3px 0 3px 0;
+}
+
+.action{
+  text-align: center;
 }

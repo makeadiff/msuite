@@ -16,7 +16,7 @@ input[type="radio"] {
   -webkit-appearance: none;
 }
 input[type="radio"]:after {
-  background-color: var(--white);
+  background: var(--white);
   border-radius: 50%;
   content: '';
   display: block;
@@ -26,6 +26,14 @@ input[type="radio"]:after {
   top: 2px;
   width: 10px;
 }
+
+
+input[type="radio"]:checked{
+  background: var(--gray90);
+  box-shadow: 0 0 3px var(--gray10);
+}
+
+
 input[type="radio"]:checked:after {
-  background-color: #f66;
+  background: var(--cyan70);
 }
