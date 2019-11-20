@@ -26,6 +26,7 @@
     'attach',
     'backspace',
     'bookmark',
+    'close',
   ];
 ?>
 
@@ -49,6 +50,8 @@
 <?php include 'components/navbar.php'; ?>
     </span>
 
+<?php //include 'components/sidebar.php'; ?>
+
     <div class="elements" id="navbar">
       <h1>Navbar</h1>
       <div class="code">
@@ -59,7 +62,7 @@
     <div class="elements" id="breadcrumb">
 
       <h1>Breadcrumb</h1>
-      <span id="breadcrumb_div">
+      <span class="elements_div" id="breadcrumb_div">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item active" aria-current="page">Home</li>
@@ -91,12 +94,17 @@
 
     <div class="elements" id="icons">
       <h1>Icons</h1>
+      <span class="elements_div" id="icons_div">
 
 <?php
       foreach ($icons as $value) {
-        echo '<i class="icon ion-md-'.$value.'"></i>';
+        echo '    <i class="icon ion-md-'.$value.'"></i>'.PHP_EOL;
       }
 ?>
+      </span>
+
+      <div class="code">
+      </div>
     </div>
 
     <div class="elements" id="dropdown">
@@ -114,37 +122,44 @@
     </div>
 
     <div class="elements" id="card">
-      <div class="row">
-        <div class="col-sm-2">
-          <div class="card shadow border-0">
-            <img src="https://picsum.photos/500/500" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h1>Cards</h1>
+      <span class="elements_div" id="card_div">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="card shadow border-0">
+              <img src="https://picsum.photos/500/500" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img src="https://picsum.photos/500/500" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="btn btn-primary waves-effect waves-light">Go somewhere</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="https://picsum.photos/500/500" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <button class="btn btn-primary waves-effect waves-light">Go somewhere</button>
-            </div>
-          </div>
-        </div>
+      </span>
+
+      <div class="code">
       </div>
+
     </div>
 
     <div class="elements" id="shadow">
@@ -185,18 +200,58 @@
           <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>        
+        </div>
         <div class="toast-body">
           Hello, world! This is a toast message.
         </div>
       </div>
 
-      <div id="copy-successful" class="toast toast-fixed top-right" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+      <div id="copy-successful" class="toast toast-fixed top-right" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="true">
         <div class="toast-body">
-          Code to Clipboard.
+          Code copied to Clipboard.
         </div>
       </div>
 
+    </div>
+
+    <div class="elements" id="nav">
+      <h1>Nav & Tabs</h1>
+      <span class="elements_div" id="nav_div">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">A</div>
+          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">B</div>
+          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">C</div>
+          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">D</div>
+        </div>
+      </span>
+      <div class="code">
+
+      </div>
+    </div>
+
+    <div class="elements" id="table">
+      <span class="elements_div" id="table_div">
+<?php include 'components/table.php'; ?>
+      </span>
+
+      <div class="code">
+      </div>
     </div>
 
 
@@ -206,12 +261,20 @@
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
     <script src="./js/msuite.js" type="text/javascript"></script>
     <script src="./js/index.js" type="text/javascript"></script>
+    <script src="./js/footable.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-    $(document).ready(function(){
-      codeCopy('navbar','navbar_div');
-      codeCopy('breadcrumb','breadcrumb_div');
-    });
+      $(document).ready(function(){
+        codeCopy('navbar','navbar_div');
+        codeCopy('breadcrumb','breadcrumb_div');
+        codeCopy('nav','nav_div');
+        codeCopy('card','card_div');
+        codeCopy('icons','icons_div');
+      });
+
+      jQuery(function($){
+      	$('.table').footable();
+      });
     </script>
 
   </body>

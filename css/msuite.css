@@ -17,8 +17,10 @@ Author: Rohit Nair for Make A Difference, India
 @import "./components/card.css";
 @import "./components/notification.css";
 @import "./components/surveys.css";
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
- @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i&display=swap');
+@import "./components/footable.standalone.css";
+
 /* Ionic Icon Package */
 @import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
 @import "./components/icon.css";
@@ -28,20 +30,17 @@ body{
   font-family: 'Nunito',sans-serif !important;
 }
 
-body.dark{
-  background: var(--gray80);
-  color: var(--white);
-}
-
-body.white{
-  background: var(--gray10);
-  color: var(--black);
-}
-
 .elements{
   width: 100%;
   padding: 20px;
+
 }
+
+/* .elements_div{
+  width: 100%;
+  border: thin solid var(--teal50);
+  padding: 15px;
+} */
 
 .elements:first-child{
   margin-top: 80px;
@@ -50,7 +49,7 @@ body.white{
 pre{
   background: var(--gray00);
   padding: 10px;
-  margin-bottom: 0px;
+  margin: 10px 0;
   height: 100%;
 }
 
@@ -70,18 +69,18 @@ pre{
   max-height: 200px;
   overflow: hidden;
   transition: all 1s ease-in;
-  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.5s ease-in;
 }
 
 .code:hover {
-  max-height: none;
-  height: auto;
+  max-height:500px;
   transition: all 1s ease-in;
-  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  overflow: scroll;
 }
 
 .code:hover pre{
   background: var(--teal50);
   color: #FFF;
-  height: 100%;
+  height: auto;
 }

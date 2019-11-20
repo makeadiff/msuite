@@ -51,3 +51,104 @@
 .navbar i.icon{
   font-size: 15px;
 }
+
+.navbar li{
+  list-style: none;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background: var(--deep-purple80);
+  font-size: 14px;
+  z-index: 10;
+}
+
+.sidebar.top-left{
+  top: 0px;
+  left: 0px;
+}
+
+.sidebar.top-right{
+  top: 0px;
+  right: 0px;
+}
+
+.sidebar .nav {
+  position: relative;
+  text-align: right;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.sidebar .close{
+  position: absolute;
+  top:70px;
+  right:10px;
+}
+
+.sidebar.collapsed{
+  width: 80px;
+  overflow: hidden;
+}
+
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  position: relative;
+  margin: 3.2em 0;
+}
+.nav ul li a {
+  line-height: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: rgba(255, 255, 255, 0.35);
+  display: block;
+  transition: all ease-out 300ms;
+}
+.nav ul li.active a {
+  color: white;
+}
+.nav ul li:not(.active)::after {
+  opacity: 0.2;
+}
+.nav ul li:not(.active):hover a {
+  color: rgba(255, 255, 255, 0.75);
+}
+.nav ul li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+}
+
+.nav-tabs{
+  border-bottom: 1px solid var(--cyan70);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  background: var(--cyan70);
+  color: var(--white);
+  border: thin solid var(--cyan70);
+}
+
+.nav-tabs .nav-link:hover{
+  border: thin solid var(--cyan70);
+  /* color: var(--cyan70); */
+}
+
+.tab-content{
+  padding: 15px;
+  border-left: thin solid var(--teal50);
+}

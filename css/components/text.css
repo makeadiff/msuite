@@ -12,5 +12,19 @@ h3{
 }
 
 p{
-  
+
+}
+
+a{
+  color: var(--cyan50);
+  padding: 4px;
+}
+
+a:hover{
+  color: var(--cyan70);
+  text-decoration: none;
+}
+
+a.visited{
+  color: var(--cyan70);
 }

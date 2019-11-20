@@ -23,6 +23,8 @@
   --light: #f8f9fa;
 
   /* Material UI Colors */
+  /* Cyan */
+  --cyan50: #00BCD4;
   --cyan70: #0097A7;
   --cyan80: #00838F;
   --cyan90: #006064;
@@ -38,4 +40,23 @@
   /* Teal */
   --teal50: #009688;
 
+  /* Deep Purple */
+  --deep-purple70: #512DA8;
+  --deep-purple80: #4527A0;
+}
+
+
+
+body.dark{
+  background: var(--gray80);
+  color: var(--white);
+}
+
+body.white{
+  background: var(--gray10);
+  color: var(--black);
+}
+
+.white{
+  color: var(--white);
 }
