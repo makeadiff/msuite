@@ -37,7 +37,14 @@
 }
 
 .navbar span.user_name{
-  padding: 0 0 0 10px;
+  padding: 0 10px 0 0;
+}
+
+.navbar span.user_profile{
+  font-size: 10px;
+  color: var(--gray10);
+  font-style: italic;
+  padding: 0 10px 0 0;
 }
 
 .navbar-dark span.user_name{
@@ -109,7 +116,7 @@
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.4em;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--white);
   display: block;
   transition: all ease-out 300ms;
 }

@@ -63,26 +63,7 @@
 
       <h1>Breadcrumb</h1>
       <span class="elements_div" id="breadcrumb_div">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">Home</li>
-          </ol>
-        </nav>
-
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Library</li>
-          </ol>
-        </nav>
-
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Library</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Data</li>
-          </ol>
-        </nav>
+<?php include 'components/breadcrumb.php'; ?>
       </span>
 
       <div class="code">
@@ -124,37 +105,7 @@
     <div class="elements" id="card">
       <h1>Cards</h1>
       <span class="elements_div" id="card_div">
-        <div class="row">
-          <div class="col-sm-2">
-            <div class="card shadow border-0">
-              <img src="https://picsum.photos/500/500" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <img src="https://picsum.photos/500/500" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button class="btn btn-primary waves-effect waves-light">Go somewhere</button>
-              </div>
-            </div>
-          </div>
-        </div>
+<?php include 'components/cards.php'; ?>
       </span>
 
       <div class="code">
@@ -180,15 +131,15 @@
 
       <div id="toast-top-right" class="toast toast-fixed top-right" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
         <div class="toast-header">
-          <img src="https://picsum.photos/20/20" class="rounded mr-2" alt="...">
+          <img src="..." class="rounded mr-2" alt="...">
           <strong class="mr-auto">Bootstrap</strong>
-          <small class="text-muted">11 mins ago</small>
+          <small class="text-muted">just now</small>
           <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="toast-body">
-          Hello, world! This is a toast message.
+          See? Just like this.
         </div>
       </div>
 
@@ -217,28 +168,7 @@
     <div class="elements" id="nav">
       <h1>Nav & Tabs</h1>
       <span class="elements_div" id="nav_div">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
-          </li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">A</div>
-          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">B</div>
-          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">C</div>
-          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">D</div>
-        </div>
+<?php include 'components/tabs.php'; ?>
       </span>
       <div class="code">
 
@@ -246,6 +176,7 @@
     </div>
 
     <div class="elements" id="table">
+      <h1>Table</h1>
       <span class="elements_div" id="table_div">
 <?php include 'components/table.php'; ?>
       </span>

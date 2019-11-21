@@ -2,3 +2,9 @@
   border-radius: 5px;
   margin-bottom: 20px;
 }
+
+
+.card{
+  border: none;
+  box-shadow: 0 0 2px #334;
+}

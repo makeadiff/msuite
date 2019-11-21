@@ -13,26 +13,35 @@
           <a class="nav-link" href="./"> <i class="icon ion-md-home"></i> Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/usage.php">Usage</a>
+          <a class="nav-link" href="./usage.php">Usage</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Components
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+<?php
+    foreach ($components as $key => $component) {
+?>
+            <a class="dropdown-item" href="#<?php echo $key ?>"><?php echo $component ?></a>
+            <div class="dropdown-divider"></div>  <!-- Optional -->
+<?php
+    }
+?>
           </div>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <div class="profile_image">
-          <img src="https://picsum.photos/id/237/200/300">
-        </div>
         <span class="user_name">
           Naughty
         </span>
+        <br/>
+        <span class="user_profile">
+          Cheif Barking Officer
+        </span>
+        <div class="profile_image">
+          <img src="https://picsum.photos/id/237/200/300">
+        </div>
       </form>
     </div>
   </nav>

@@ -14,7 +14,7 @@ $(document).ready(function(){
     code = code.replace(/&gt;/g,'>');
     copyTextToClipboard(code);
     $('#copy-successful').toast('show');
-  });
+  });  
 
 })
 
