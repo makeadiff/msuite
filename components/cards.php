@@ -1,5 +1,7 @@
     <div class="row">
       <div class="col-sm-2">
+
+        <!-- Card with Image - Small -->
         <div class="card">
           <img src="https://picsum.photos/500/500" class="card-img-top" alt="...">
           <div class="card-body">
@@ -10,6 +12,8 @@
         </div>
       </div>
       <div class="col-sm-3">
+
+        <!-- Card without Image - Small -->
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>

@@ -159,3 +159,13 @@
   padding: 15px;
   border-left: thin solid var(--teal50);
 }
+
+.badge-notification{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  background: var(--deep-orange80);
+  font-size: 8px;
+  padding: 4px;
+  border-radius: 2px;
+}

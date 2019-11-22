@@ -41,6 +41,7 @@
         </span>
         <div class="profile_image">
           <img src="https://picsum.photos/id/237/200/300">
+          <span class="badge badge-notification badge-pill">14</span>
         </div>
       </form>
     </div>

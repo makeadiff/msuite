@@ -33,24 +33,35 @@
 <!-- Picture Template Lorem Ipsum: https://picsum.photos/ -->
 
 
-</<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include 'global_header.php'; ?>
 
-    <title>MSuite</title>
-
-    <!-- Style Sheet for MSuite V0.0.1 -->
-    <link rel="stylesheet" href="./css/msuite.css">
-
-  </head>
-  <body class="dark">
+    <!-- Navbar Code Section -->
     <span id="navbar_div">
 <?php include 'components/navbar.php'; ?>
     </span>
 
 <?php //include 'components/sidebar.php'; ?>
+
+    <div class="elements" id="usage">
+      <h1>Usage</h1>
+      <pre>
+        <code>
+          &tl;/&tl;!DOCTYPE html&gt;
+          &tl;html lang="en" dir="ltr"&gt;
+            &tl;head&gt;
+              &tl;meta charset="utf-8"&gt;
+              &tl;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+              &tl;title&gt;MSuite&tl;/title&gt;
+
+              &tl;!-- Style Sheet for MSuite V0.0.1 --&gt;
+              &tl;link rel="stylesheet" href="./css/msuite.css"&gt;
+
+            &tl;/head&gt;
+            &tl;body class="dark"&gt;....
+        </code>
+      </pre>
+    </div>
 
     <div class="elements" id="navbar">
       <h1>Navbar</h1>

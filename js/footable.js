@@ -1,6 +1,6 @@
 /*
 * FooTable v3 - FooTable is a jQuery plugin that aims to make HTML tables on smaller devices look awesome.
-* @version 3.1.5
+* @version 3.1.6
 * @link http://fooplugins.com
 * @copyright Steven Usher & Brad Vincent 2015
 * @license Released under the GPLv3 license.
@@ -1580,7 +1580,7 @@
 			 * @protected
 			 * @type {jQuery}
 			 */
-			this.$toggle = $('<i/>', {'class': 'footable-toggle icon ion-md-add'});
+			this.$toggle = $('<span/>', {'class': 'footable-toggle fooicon fooicon-plus'});
 
 			var isObj = F.is.hash(dataOrElement),
 				hasOptions = isObj && F.is.hash(dataOrElement.options) && F.is.hash(dataOrElement.value);
@@ -1796,7 +1796,7 @@
 					});
 				}
 				self.$el.attr('data-expanded', true);
-				self.$toggle.removeClass('ion-md-add').addClass('ion-md-remove');
+				self.$toggle.removeClass('fooicon-plus').addClass('fooicon-minus');
 				self.expanded = true;
 				self.ft.raise('expanded.ft.row', [self]);
 			});
@@ -1824,7 +1824,7 @@
 				});
 				self.$details.detach();
 				self.$el.removeAttr('data-expanded');
-				self.$toggle.removeClass('ion-md-remove').addClass('ion-md-add');
+				self.$toggle.removeClass('fooicon-minus').addClass('fooicon-plus');
 				if (F.is.boolean(setExpanded) ? setExpanded : true) self.expanded = false;
 				self.ft.raise('collapsed.ft.row', [self]);
 			});
@@ -6115,7 +6115,7 @@
 			 * @type {string}
 			 */
 			this.deleteText = table.o.editing.deleteText;
-
+			
 			/**
 			 * The text that appears in the view button. This can contain HTML.
 			 * @type {string}
@@ -6810,7 +6810,7 @@
 	 * can be set to false and then followed by a call to the {@link FooTable.Table#draw} method.
 	 */
 	F.Rows.prototype.update = function(indexOrRow, data, redraw){
-		var len = this.ft.rows.all.length,
+		var len = this.ft.rows.all.length, 
 			row = indexOrRow;
 		if (F.is.number(indexOrRow) && indexOrRow >= 0 && indexOrRow < len){
 			row = this.ft.rows.all[indexOrRow];
@@ -6827,7 +6827,7 @@
 	 * can be set to false and then followed by a call to the {@link FooTable.Table#draw} method.
 	 */
 	F.Rows.prototype.delete = function(indexOrRow, redraw){
-		var len = this.ft.rows.all.length,
+		var len = this.ft.rows.all.length, 
 			row = indexOrRow;
 		if (F.is.number(indexOrRow) && indexOrRow >= 0 && indexOrRow < len){
 			row = this.ft.rows.all[indexOrRow];
@@ -7327,10 +7327,12 @@
 		return value + "";
 	};
 
-	// override the base method for DateColumns
-	F.DateColumn.prototype.stringify = function(value, options, rowData){
-		return F.is.object(value) && F.is.boolean(value._isAMomentObject) && value.isValid() ? value.format(this.formatString) : '';
-	};
+	if (F.is.defined(F.DateColumn)){
+		// override the base method for DateColumns
+		F.DateColumn.prototype.stringify = function(value, options, rowData){
+			return F.is.object(value) && F.is.boolean(value._isAMomentObject) && value.isValid() ? value.format(this.formatString) : '';
+		};
+	}
 
 	// override the base method for ObjectColumns
 	F.ObjectColumn.prototype.stringify = function(value, options, rowData){
