@@ -1,62 +1,99 @@
-
+/* -----
+  Color Reference Sheet for Material UI: https://www.materialui.co/colors
+  Document Author: Rohit Nair
+  for Make A Difference, India
+------ */
 
 :root {
-  --mad-red: #ed1849;
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
+
+  /* MAD Colors */
+    --mad-red: #ed1849;
+    --mad-yellow: #FFE800;
+
+  /* Custom Colors   */
+    --black : #000000;
+    --blue: #2196F3;
+    --light-blue: #03A9F4;
+    --indigo: #3F51B5;
+    --purple: #9C27B0;
+    --deep-purple: #673AB7;
+    --pink: #E91E63;
+    --red: #f44336;
+    --orange: #fd7e14;
+    --green: #4CAF50;
+    --light-green: #8BC34A;
+    --lime: #CDDC39;
+    --teal: #009688;
+    --cyan: #00BCD4;
+    --white: #fff;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --yellow: #FFEB3B;
+    --amber: #FFC107;
+    --deep-orange: #FF5722;
+    --brown: #795548;
+    --grey: #9E9E9E;
 
   /* Material UI Colors */
+
   /* Cyan */
-  --cyan50: #00BCD4;
-  --cyan70: #0097A7;
-  --cyan80: #00838F;
-  --cyan90: #006064;
+    --cyan70: #0097A7;
+    --cyan80: #00838F;
+    --cyan90: #006064;
 
+  /* Indigo */
+    --indigo60: #3949AB;
+    --indigo70: #303F9F;
 
-  --gray00: #FAFAFA;
-  --gray10: #F5F5F5;
-  --gray70: #616161;
-  --gray80: #424242;
-  --gray90: #212121;
-  --black : #000000;
+  /* Gray */
+    --grey00: #FAFAFA;
+    --grey10: #F5F5F5;
+    --grey70: #616161;
+    --grey80: #424242;
+    --grey90: #212121;
 
   /* Teal */
-  --teal50: #009688;
+    --teal40: #26A69A;
+    --teal60: #00897B;
+    --teal70: #00796B;
+    --teal80: #00695C;
+    --teal90: #004D40;
 
   /* Deep Purple */
-  --deep-purple70: #512DA8;
-  --deep-purple80: #4527A0;
+    --deep-purple70: #512DA8;
+    --deep-purple80: #4527A0;
 
   /* Deep Orange */
-  --deep-orange80: #D84315;
+
+    --deep-orange80: #D84315;
+
+  /* Pink */
+    --pink30: #F06292;
+    --pink40: #EC407A;
+    --pink50: #E91E63;
+    --pink60: #D81B60;
+    --pink70: #C2185B;
+    --pink80: #AD1457;
+    --pink90: #880E4F;
+
+  /* Purple */
+
 }
 
 
 
 body.dark{
-  background: var(--gray80);
+  background: var(--grey80);
   color: var(--white);
 }
 
-body.white{
-  background: var(--gray10);
+body.light{
+  background: var(--grey10);
   color: var(--black);
 }
 

@@ -7,4 +7,16 @@
 .card{
   border: none;
   box-shadow: 0 0 2px #334;
+  background: var(--white);
+  color: var(--black);
+}
+
+.card.light{
+  background: var(--white);
+  color: var(--black);
+}
+
+.card.dark{
+  background: var(--grey80);
+  color:var(--white);
 }

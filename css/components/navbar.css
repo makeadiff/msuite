@@ -6,12 +6,12 @@
 }
 
 .navbar-dark{
-  background: var(--gray90);
+  background: var(--grey90);
   border-bottom: 2px solid var(--mad-red);
 }
 
 .navbar-light{
-  background: var(--gray);
+  background: var(--grey);
 }
 
 .navbar-dark .navbar-toggler{
@@ -42,7 +42,7 @@
 
 .navbar span.user_profile{
   font-size: 10px;
-  color: var(--gray10);
+  color: var(--grey10);
   font-style: italic;
   padding: 0 10px 0 0;
 }
@@ -52,7 +52,7 @@
 }
 
 .navbar-light span.user_name{
-  color: var(--gray90);
+  color: var(--grey90);
 }
 
 .navbar i.icon{
@@ -157,7 +157,8 @@
 
 .tab-content{
   padding: 15px;
-  border-left: thin solid var(--teal50);
+  border-left: thin solid var(--cyan70);
+  margin-bottom: 20px;
 }
 
 .badge-notification{
@@ -168,4 +169,5 @@
   font-size: 8px;
   padding: 4px;
   border-radius: 2px;
+  cursor: pointer;
 }

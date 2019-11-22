@@ -14,17 +14,17 @@ $(document).ready(function(){
     code = code.replace(/&gt;/g,'>');
     copyTextToClipboard(code);
     $('#copy-successful').toast('show');
-  });  
+  });
 
 })
 
 
 function codeCopy(component,div_id){
-
+  var title = '<h2>Source Code</h2>';
   var code = $('#'+div_id).html();
   code = code.replace(/</g,'&lt;');
   code = code.replace(/>/g,'&gt;');
-  var pre_code_appended = '<pre>'+'<code>'+ code + '</code>'+'</pre>';
+  var pre_code_appended = title + '<pre>'+'<code>'+ code + '</code>'+'</pre>';
   copy_code = $('#'+component+' .code').html();
   $('#'+component+' .code').html(copy_code+pre_code_appended);
 }

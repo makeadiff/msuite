@@ -15,8 +15,8 @@
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">A</div>
-      <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">B</div>
-      <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">C</div>
-      <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">D</div>
+      <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">Content for Tab A</div>
+      <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">Content for Tab B</div>
+      <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">Content for Tab C</div>
+      <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">Content for Tab D</div>
     </div>

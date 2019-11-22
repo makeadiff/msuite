@@ -4,7 +4,7 @@ input{
 
 
 input[type="radio"] {
-  background: var(--gray70);
+  background: var(--grey70);
   cursor: pointer;
   display: inline-block;
   border-radius: 50%;
@@ -29,8 +29,8 @@ input[type="radio"]:after {
 
 
 input[type="radio"]:checked{
-  background: var(--gray90);
-  box-shadow: 0 0 3px var(--gray10);
+  background: var(--grey90);
+  box-shadow: 0 0 3px var(--grey10);
 }
 
 

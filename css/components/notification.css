@@ -18,11 +18,11 @@
 }
 
 .toast-header{
-  background: var(--gray90);
+  background: var(--grey90);
   color: var(--white);
 }
 .toast-body{
-  background: var(--gray90);
+  background: var(--grey90);
   color: var(--white);
 }
 
