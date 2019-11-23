@@ -67,11 +67,12 @@
 
 .sidebar {
   position: fixed;
-  width: 25%;
+  width: 20%;
   height: 100vh;
-  background: var(--deep-purple80);
+  background: var(--cyan80);
   font-size: 14px;
   z-index: 10;
+  display: none;
 }
 
 .sidebar.top-left{
@@ -106,16 +107,23 @@
 
 .nav ul {
   list-style: none;
+  margin-left: 0px;
+  width: 90%;
+  margin-left: 0px;
 }
 .nav ul li {
   position: relative;
-  margin: 3.2em 0;
+  margin: 5px 0;
 }
+
+.nav ul li i{
+  font-size: 18px;
+}
+
 .nav ul li a {
-  line-height: 5em;
+  line-height: 2;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.4em;
   color: var(--white);
   display: block;
   transition: all ease-out 300ms;
@@ -127,17 +135,16 @@
   opacity: 0.2;
 }
 .nav ul li:not(.active):hover a {
-  color: rgba(255, 255, 255, 0.75);
+  color: ;
 }
 .nav ul li::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 0.2em;
-  background: black;
+  height: 2px;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  background: var(--white);
 }
 
 .nav-tabs{
@@ -170,4 +177,12 @@
   padding: 4px;
   border-radius: 2px;
   cursor: pointer;
+}
+
+@media (max-width:500px){
+  .sidebar {
+    position: fixed;
+    width: 60%;
+    z-index: 10;
+  }
 }

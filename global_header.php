@@ -7,7 +7,8 @@
     <title>MSuite</title>
 
     <!-- Style Sheet for MSuite V0.0.1 -->
-    <link rel="stylesheet" href="./css/msuite.css">
+    <link rel="icon" href="./msuite20.ico"/>
+    <link rel="stylesheet" href="./css/msuite.css"/>
 
   </head>
   <body class="dark">

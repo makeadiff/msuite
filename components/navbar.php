@@ -1,6 +1,6 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">
-      <img src="" width="30" height="30" class="d-inline-block align-top" alt=""> &nbsp;
+      <img src="./icons/msuite100.png" width="30" height="30" class="d-inline-block align-top" alt=""> &nbsp;
       <strong>M</strong>Suite
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,6 @@
     foreach ($components as $key => $component) {
 ?>
             <a class="dropdown-item" href="#<?php echo $key ?>"><?php echo $component ?></a>
-            <div class="dropdown-divider"></div>  <!-- Optional -->
 <?php
     }
 ?>
