@@ -47,7 +47,7 @@
     </span>
 
     <span id="sidebar_div">
-<?php include 'components/sidebar.php'; ?>
+<?php //include 'components/sidebar.php'; ?>
     </span>
 
     <div class="container">
