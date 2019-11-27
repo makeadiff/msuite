@@ -29,16 +29,6 @@ body {
   font-family: 'Nunito', sans-serif !important;
 }
 
-.elements {
-  width: 100%;
-  padding: 20px;
-  background: var(--grey90);
-  margin-bottom: 20px;
-}
-
-.elements:first-child {
-  margin-top: 80px;
-}
 
 pre {
   background: var(--grey10);
@@ -57,32 +47,4 @@ pre {
   .elements {
     padding: 10px;
   }
-}
-
-.code {
-  cursor: pointer;
-  max-height: 200px;
-  overflow: hidden;
-  transition: all 1s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  border-top: thin solid var(--teal);
-  padding-top: 15px;
-}
-
-.code:hover {
-  max-height: 500px;
-  transition: all 1s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  overflow: scroll;
-}
-
-.code:hover pre {
-  background: var(--teal);
-  color: #FFF;
-  height: auto;
-}
-
-span.highlight-code {
-  color: var(--pink80);
-  font-weight: bold;
 }
