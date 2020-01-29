@@ -1,17 +1,5 @@
 <?php
 
-  $components = [
-    'navbar' => 'Navbar',
-    'breadcrumb' => 'Breadcrumb',
-    'icons' => 'Icons',
-    'cards' => 'Cards',
-    'sidebar' => 'Sidebar',
-    'shadow' => 'Shadows',
-    'toast' => 'Notification Toast',
-    'nav' => 'Nav and Tabs',
-    'table' => 'Tables',
-  ];
-
   $icons = [
     'add-circle-outline',
     'add',
@@ -231,3 +219,22 @@
     </div>
 
   <?php include 'global_footer.php'; ?>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      codeCopy('navbar','navbar_div');
+      codeCopy('sidebar','sidebar_div');
+      codeCopy('breadcrumb','breadcrumb_div');
+      codeCopy('nav','nav_div');
+      codeCopy('card','card_div');
+      codeCopy('icons','icons_div');
+      codeCopy('table','table_div');
+    });
+
+    jQuery(function($){
+      $('.table').footable();
+    });
+  </script>
+
+  </body>
+  </html>

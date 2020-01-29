@@ -1,0 +1,15 @@
+body.dark {
+  background: #424242;
+  color: #FFF; }
+
+body.light {
+  background: #F5F5F5;
+  color: #000000; }
+
+.white {
+  color: #FFF; }
+
+.black {
+  color: #212121; }
+
+/*# sourceMappingURL=sample.css.map */

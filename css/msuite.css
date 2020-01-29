@@ -6,6 +6,7 @@ Author: Rohit Nair for Make A Difference, India
 */
 @import "./bootstrap.css";
 @import "./components/color.css";
+@import "./components/layout.css";
 /* @import "./materialize.css"; */
 @import "./components/animation.css";
 @import "./components/input.css";
@@ -20,6 +21,7 @@ Author: Rohit Nair for Make A Difference, India
 /* Ionic Icon Package */
 @import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
 @import "./components/icon.css";
+@import "./components/forms.css";
 
 html {
   scroll-behavior: smooth;
@@ -27,15 +29,6 @@ html {
 
 body {
   font-family: 'Nunito', sans-serif !important;
-}
-
-
-pre {
-  background: var(--grey10);
-  color: var(--grey70);
-  padding: 10px;
-  margin: 10px 0;
-  height: 100%;
 }
 
 #icons i.icon {

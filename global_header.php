@@ -1,3 +1,22 @@
+<?php
+  
+
+  $components = [
+    'navbar' => 'Navbar',
+    'breadcrumb' => 'Breadcrumb',
+    'icons' => 'Icons',
+    'cards' => 'Cards',
+    'sidebar' => 'Sidebar',
+    'shadow' => 'Shadows',
+    'toast' => 'Notification Toast',
+    'nav' => 'Nav and Tabs',
+    'table' => 'Tables',
+  ];
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>

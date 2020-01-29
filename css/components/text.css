@@ -8,7 +8,11 @@ h2{
 }
 
 h3{
-  font-size: 20px;
+  font-size: 18px;
+}
+
+h4{
+  font-size: 15px;
 }
 
 p{
@@ -27,4 +31,29 @@ a:hover{
 
 a.visited{
   color: var(--cyan70);
+}
+
+/* mainheadings*/
+.main-title {
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*headings*/
+.title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--grey90);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: var(--grey70);
 }

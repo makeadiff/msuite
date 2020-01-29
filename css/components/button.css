@@ -18,3 +18,55 @@
   background: var(--cyan90);
   box-shadow: 0 0 2px #CCC;
 }
+
+.action-button {
+  width: 150px;
+  background: var(--mad-red);
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px
+}
+
+.action-button:hover, .action-button:focus {
+    box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--mad-red);
+}
+
+.sub-action-button {
+  width: 150px;
+  background: var(--cyan70);
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+.sub-button-previous:hover, .sub-button-previous:focus {
+    box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--cyan70);
+}
+
+.file-button {
+    width: 150px;
+    background: #512DA8;
+    font-weight: bold;
+    color: var(--white);
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.file-button:disabled {
+    width: 150px;
+    background: #CCC;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}

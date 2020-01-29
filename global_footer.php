@@ -4,22 +4,3 @@
 <script src="./js/msuite.js" type="text/javascript"></script>
 <script src="./js/footable.js" type="text/javascript"></script>
 <script src="./js/index.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    codeCopy('navbar','navbar_div');
-    codeCopy('sidebar','sidebar_div');
-    codeCopy('breadcrumb','breadcrumb_div');
-    codeCopy('nav','nav_div');
-    codeCopy('card','card_div');
-    codeCopy('icons','icons_div');
-    codeCopy('table','table_div');
-  });
-
-  jQuery(function($){
-    $('.table').footable();
-  });
-</script>
-
-</body>
-</html>

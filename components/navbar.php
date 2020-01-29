@@ -1,4 +1,8 @@
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+<?php
+  $uri = $_SERVER['REQUEST_URI'];
+?>
+
+  <nav class="navbar fixed-top navbar-expand-lg">
     <a class="navbar-brand" href="#">
       <img src="./icons/msuite100.png" width="30" height="30" class="d-inline-block align-top" alt=""> &nbsp;
       <strong>M</strong>Suite
@@ -14,6 +18,14 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./usage.php">Usage</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Templates
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./survey.php">Survey</a>
+          </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

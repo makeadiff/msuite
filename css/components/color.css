@@ -38,6 +38,7 @@
     --deep-orange: #FF5722;
     --brown: #795548;
     --grey: #9E9E9E;
+    --blue-grey: #607D8B;
 
   /* Material UI Colors */
 
@@ -50,12 +51,30 @@
     --indigo60: #3949AB;
     --indigo70: #303F9F;
 
-  /* Gray */
+  /* Grey */
     --grey00: #FAFAFA;
     --grey10: #F5F5F5;
+    --grey20: #EEEEEE;
+    --grey30: #E0E0E0;
+    --grey40: #BDBDBD;
+    --grey50: #9E9E9E;
+    --grey60: #757575;
     --grey70: #616161;
     --grey80: #424242;
     --grey90: #212121;
+
+  /* Blue Grey */
+
+    --blue-grey00: #ECEFF1;
+    --blue-grey10: #CFD8DC;
+    --blue-grey20: #B0BEC5;
+    --blue-grey30: #90A4AE;
+    --blue-grey40: #78909C;
+    --blue-grey50: #607D8B;
+    --blue-grey60: #546E7A;
+    --blue-grey70: #455A64;
+    --blue-grey80: #37474F;
+    --blue-grey90: #263238;
 
   /* Teal */
     --teal40: #26A69A;
@@ -83,20 +102,34 @@
 
   /* Purple */
 
+  /* Red */
+    --red : #f44336;
+    --red00: #ffebee;
+    --red10: #ffcdd2;
+    --red20: #ef9a9a;
+    --red30: #e57373;
+    --red40: #ef5350;
+    --red60: #e53935;
+    --red70: #d32f2f;
+    --red80: #c62828;
+    --red90: #b71c1c;    
+
 }
-
-
 
 body.dark{
   background: var(--grey80);
-  color: var(--white);
+  /* color: var(--white); */
 }
 
 body.light{
   background: var(--grey10);
-  color: var(--black);
+  /* color: var(--black); */
 }
 
 .white{
   color: var(--white);
+}
+
+.black{
+  color: var(--grey90);
 }

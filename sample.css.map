@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAkGA,SAAS;EACP,UAAU,EAxCH,OAAO;EAyCd,KAAK,EA5EC,IAAI;;AA+EZ,UAAU;EACR,UAAU,EApDH,OAAO;EAqDd,KAAK,EA/FE,OAAO;;AAiGhB,MAAM;EACJ,KAAK,EApFC,IAAI;;AAsFZ,MAAM;EACJ,KAAK,EAnDE,OAAO",
+"sources": ["sass/components/color.sass"],
+"names": [],
+"file": "sample.css"
+}
