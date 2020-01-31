@@ -134,10 +134,10 @@
   position: fixed;
   width: 20%;
   height: 100vh;
-  background: var(--cyan80);
+  background: var(--teal80);
   font-size: 14px;
   z-index: 10;
-  display: none;
+  /* display: none; */
 }
 
 .sidebar.top-left{

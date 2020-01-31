@@ -37,9 +37,9 @@ function fallbackCopyTextToClipboard(text) {
   } catch (err) {
     console.error('Fallback: Oops, unable to copy', err);
   }
-
   document.body.removeChild(textArea);
 }
+
 function copyTextToClipboard(text) {
   if (!navigator.clipboard) {
     fallbackCopyTextToClipboard(text);

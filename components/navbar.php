@@ -26,21 +26,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="./survey.php">Survey</a>
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Components
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<?php
-    foreach ($components as $key => $component) {
-?>
-            <a class="dropdown-item" href="#<?php echo $key ?>"><?php echo $component ?></a>
-<?php
-    }
-?>
-          </div>
-        </li>
+        </li>        
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <span class="user_name">
