@@ -4,4 +4,3 @@
 
 
 ### Vue Package Setup
-See [Configuration Reference]().

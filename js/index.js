@@ -51,3 +51,10 @@ function copyTextToClipboard(text) {
     console.error('Async: Could not copy text: ', err);
   });
 }
+
+$('.theme_setting').click(function(){
+  console.log(this.id);
+  $('body').removeClass('dark');
+  $('body').removeClass('light');
+  $('body').addClass(this.id);
+});

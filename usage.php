@@ -44,6 +44,8 @@
       <span class="highlight-code">&gt;</span>
       <span class="highlight-code">&lt;/MsuiteHeader&gt;</span>
       </code>
-    </pre>    
+    </pre>
   </div>
 </div>
+
+<?php include 'global_footer.php'; ?>

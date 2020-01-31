@@ -6,5 +6,5 @@ $(document).on('click', 'a[href^="#"]', function (e) {
 });
 
 
-var sidebar = $('.sidebar');
-console.log(sidebar);
+// var sidebar = $('.sidebar');
+// console.log(sidebar);

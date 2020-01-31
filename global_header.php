@@ -1,5 +1,5 @@
 <?php
-  
+
 
   $components = [
     'navbar' => 'Navbar',
