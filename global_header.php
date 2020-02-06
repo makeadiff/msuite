@@ -13,8 +13,6 @@
     'table' => 'Tables',
   ];
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +21,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MSuite</title>
+    <title>MSuite: The Easy UI Framework</title>
 
     <!-- Style Sheet for MSuite V0.0.1 -->
     <link rel="icon" href="./msuite20.ico"/>

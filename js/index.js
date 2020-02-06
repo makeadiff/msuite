@@ -58,3 +58,11 @@ $('.theme_setting').click(function(){
   $('body').removeClass('light');
   $('body').addClass(this.id);
 });
+
+
+$(document).on('click', 'a[href^="#"]', function (e) {
+    e.preventDefault();
+    $('html, body').stop().animate({
+        scrollTop: $($(this).attr('href')).offset().top-70
+    }, 500, 'linear');
+});

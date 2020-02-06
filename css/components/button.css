@@ -19,33 +19,6 @@
   box-shadow: 0 0 2px #CCC;
 }
 
-.action-button {
-  width: 150px;
-  background: var(--mad-red);
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin: 10px 5px
-}
-
-.action-button:hover, .action-button:focus {
-    box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--mad-red);
-}
-
-.sub-action-button {
-  width: 150px;
-  background: var(--cyan70);
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin: 10px 5px;
-}
 
 .sub-button-previous:hover, .sub-button-previous:focus {
     box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--cyan70);
@@ -69,4 +42,51 @@
     font-weight: bold;
     padding: 10px 5px;
     margin: 10px 5px;
+}
+
+.button {
+  position: relative;
+  background: var(--cyan70);
+  color: var(--white);
+  font-size: 1.1rem;
+  margin: 10px 0;
+  padding: 15px 5px;
+  min-width: 300px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.button:hover {
+  color: var(--white);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.button:active::before, .button:focus::before {
+  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+.button:focus {
+  outline: none;
 }

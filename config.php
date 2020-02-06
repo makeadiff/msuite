@@ -1,5 +1,5 @@
 <?php
 
 $config = [
-  'parent_dir' => '/';
+  'parent_dir' => 'http://localhost/dev/msuite';
 ]

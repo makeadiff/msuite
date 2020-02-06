@@ -26,29 +26,66 @@
           </p>
           <hr>
           <p class="required-text">*Required</p>
-          <input type='text' name="user_city_id" class="hidden" value=""/>
-          <p class="form-label">Full Name <span class="required">*</span></p>
-          <input type="text" name="user_name" onchange="req(this);" placeholder="Your Full Name" value="" required=""/>
-          <p class="form-label">Personal Email <span class="required">*</span></p>
-          <input type="email" name="user_email"onchange="req(this);" placeholder="Email Address" value="" required=""/>
-          <p class="form-label">Phone No. <span class="required">*</span></p>
-          <input type="text" name="user_phone" onchange="{req(this); validphone(this);}" placeholder="Phone" value = "" required=""/>
-          <p class="form-label">Sex <span class="required">*</span></p>
-          <div class="select">
-            <select id ="user_sex" name="user_sex" value ="f" onchange="req(this);">
-                     <option >Sex</option>
-                     <option value="m">Male</option>
-                     <option value="f">Female</option>
-                     <option value="o">Other</option>
-            </select>
+          <m-input field-label="Your Name" name="name" field-type="text" required></m-input>
+          <m-input field-label="Personal Email" name="email" field-type="email" required></m-input>
+          <m-input field-label="Your Phone" name="phone" field-type="text" required></m-input>
+
+          <m-select id ="user_sex" name="user_sex" value ="f" onchange="req(this);">
+            <option >Sex</option>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="o">Other</option>
+          </m-select>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" checked="checked"/><i class="helper"></i>I'm the label from a checkbox
+            </label>
           </div>
-          <p class="form-label">Date of Birth (DD/MM/YYYY) <span class="required">*</span></p>
-          <input type="date" name="user_birthday" placeholder="birthday" value="" required="" onchange="req(this);" max="2003-01-01">
-          <p class="form-label">Address <span class="required">*</span></p>
-          <input type="text" name="user_address" placeholder="Enter Your Address" required="" value=""/><br>
-          <hr>
-          <input type="button" name="next" class="next action-button" value="Next"/>
-          <input type="button" name="next" class="next sub-action-button" value="Next"/>
+
+          <m-input field-type="date" name="user_birthday" field-label="Your Date of Birth" value="" required="" onchange="req(this);" max="2003-01-01"></m-input>
+
+          <m-input field-type="text" name="user_address" field-label="Enter Your Address" required="" value=""/></m-input>
+
+          <button type="button" class="button next"><span>Submit</span></button>
+      </fieldset>
+      <fieldset>
+          <h1>Material Design formular</h1>
+          <div class="form-group">
+            <select>
+              <option>Value 1</option>
+              <option>Value 2</option>
+            </select>
+            <label for="select" class="control-label">Selectbox</label><i class="bar"></i>
+          </div>
+          <div class="form-group">
+            <textarea required="required"></textarea>
+            <label for="textarea" class="control-label">Textarea</label><i class="bar"></i>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"/><i class="helper"></i>I'm the label from a checkbox
+            </label>
+          </div>
+          <div class="form-radio">
+            <div class="radio">
+              <label>
+                <input type="radio" name="radio" checked="checked"/><i class="helper"></i>I'm the label from a radio button
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="radio"/><i class="helper"></i>I'm the label from a radio button
+              </label>
+            </div>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"/><i class="helper"></i>I'm the label from a checkbox
+            </label>
+          </div>
+          <button type="button" class="button"><span>Submit</span></button>
       </fieldset>
       </div>
     </div>

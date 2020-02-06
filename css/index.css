@@ -61,8 +61,11 @@ span.comment-code{
 }
 
 .version{
-  background: var(--red80);
-  color: var(--white);
+  background: var(--pink);
+}
+
+.version a{
+  color: var(--blue-grey90);
 }
 
 .dark .version a, .light .version a, .light .theme a, .dark .version a, {
