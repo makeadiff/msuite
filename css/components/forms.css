@@ -59,65 +59,6 @@
 }
 
 
-
-/* Select Dropdown */
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background: var(--grey30);
-  background-image: none;
-}
-
-/* Remove IE arrow */
-select::-ms-expand {
-  display: none;
-}
-
-/* Custom Select */
-.select {
-  position: relative;
-  display: flex;
-  width: 300px;
-  line-height: 3;
-  background: var(--grey60);
-  overflow: visible;
-  border-radius: .25em;
-  margin-bottom: 15px;
-}
-
-select {
-  flex: 1;
-  padding: 0 .5em;
-  color: var(--grey90);
-  cursor: pointer;
-}
-/* Arrow */
-.select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 1em;
-  background: var(--grey60);
-  cursor: pointer;
-  pointer-events: none;
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
-  transition: .25s all ease;
-  color: var(--white);
-}
-/* Transition */
-.select:hover::after {
-  background: var(--mad-red);
-}
-
-/* Select Dropdown Over */
-
 /* M-Form Styling */
 
 .mform p.form-label{
@@ -226,12 +167,4 @@ label.error{
 label.label-box{
   width: 100%;
   font-weight: 400;
-}
-
-
-@media and (max-width:500px){
-  .select {
-    width: 100%;
-  }
-
 }

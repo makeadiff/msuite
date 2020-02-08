@@ -49,6 +49,56 @@ class MInput extends HTMLElement{
   }
 }
 
+class MRadio extends HTMLElement{
+  constructor(){
+    super();
+    var wrapper = document.createElement('div');
+    wrapper.setAttribute('class','formGroup');
+
+    var fieldType,fieldLabel,elementID,required,name,value;
+
+
+    if(this.hasAttribute('field-type')){
+      fieldType = this.getAttribute('field-type');
+      var input = document.createElement('input');
+      input.setAttribute('type',fieldType);
+      input.setAttribute('class','formField');
+      elementID = Math.floor((Math.random()*10000)).toString(36);
+
+      input.setAttribute('id',elementID);
+
+      if(this.hasAttribute('required')){
+        required = this.getAttribute('required');
+        input.setAttribute('required','required');
+      }
+
+      if(this.hasAttribute('value')){
+        value = this.getAttribute('value');
+        input.setAttribute('value',value);
+      }
+
+      if(this.hasAttribute('field-label')){
+        fieldLabel = this.getAttribute('field-label');
+        var label = document.createElement('label');
+        label.setAttribute('class','formLabel');
+        label.setAttribute('for',elementID);
+        input.setAttribute('placeholder',fieldLabel);
+        label.innerHTML = fieldLabel;
+
+        if(this.hasAttribute('name')){
+          name = this.getAttribute('name');
+        }
+        else{
+          name = fieldLabel.toLowerCase();
+        }
+        input.setAttribute('name',name);
+      }
+    }
+    this.appendChild(wrapper);
+    wrapper.appendChild(input);
+    wrapper.appendChild(label);
+  }
+}
 
 class MSelect extends HTMLElement{
   constructor(){
@@ -93,3 +143,4 @@ $('.progressbar li').css({
 
 customElements.define('m-input',MInput);
 customElements.define('m-select',MSelect);
+customElements.define('m-radio',MRadio);
