@@ -114,6 +114,11 @@
     --red80: #c62828;
     --red90: #b71c1c;
 
+  /* Light Green */
+
+    --light-green: #8BC34A;
+    --light-green40: #9CCC65;
+    
 }
 
 body.dark{

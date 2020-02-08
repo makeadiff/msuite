@@ -35,3 +35,17 @@ button.close{
     right: 10px;
   }
 }
+
+
+.alert{
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.alert-success{
+  background: var(--light-green40);
+  color: var(--grey80);
+}

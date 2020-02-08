@@ -132,7 +132,7 @@ class MSelect extends HTMLElement{
 var progressbar = document.getElementsByClassName('progressbar');
 var fieldset_count = progressbar[0].children.length;
 
-var progressbar_width = Math.floor(100/fieldset_count);
+var progressbar_width = 100/fieldset_count;
 $('.progressbar li').css({
   width: progressbar_width+'%'
 });

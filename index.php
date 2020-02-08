@@ -21,6 +21,11 @@
     'backspace',
     'bookmark',
     'close',
+    'bicycle',
+    'fastforward',
+    'heart',
+    'play',
+    'lock'
   ];
 ?>
 

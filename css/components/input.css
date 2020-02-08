@@ -54,9 +54,15 @@ textarea{
     color: #2C3E50;
     font-size: 15px;
     background: none;
+    box-shadow: none;
+    font-family: 'Nunito';
 }
 
 
+/* input:required:focus {
+  border-bottom: 2px solid var(--red60);
+  outline: none;
+} */
 
 .formGroup {
   position: relative;
@@ -295,23 +301,23 @@ body *::before {
   transition: transform 0.10s ease;
   transition: transform 0.10s ease, -webkit-transform 0.10s ease;
   border-radius: 50%;
-  border: 0.125rem solid currentColor;
+  border: 0.125rem solid var(--teal80);
 }
 .radio .helper::after {
   -webkit-transform: scale(0);
           transform: scale(0);
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: var(--teal80);
+  border-color: var(--teal80);
 }
 .radio label:hover .helper {
-  color: #337ab7;
+  color: var(--teal80);
 }
 .radio input:checked ~ .helper::after {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 }
 .radio input:checked ~ .helper::before {
-  color: #337ab7;
+  color: var(--teal80);
 }
 
 .checkbox {
@@ -335,7 +341,7 @@ body *::before {
   position: absolute;
   height: 0;
   width: 0.2rem;
-  background-color: #337ab7;
+  background-color: var(--teal80);
   display: block;
   -webkit-transform-origin: left top;
           transform-origin: left top;
@@ -359,10 +365,10 @@ body *::before {
           transform: rotate(-45deg);
 }
 .checkbox label:hover .helper {
-  color: #337ab7;
+  color: var(--teal80);
 }
 .checkbox input:checked ~ .helper {
-  color: #337ab7;
+  color: var(--teal80);
 }
 .checkbox input:checked ~ .helper::after, .checkbox input:checked ~ .helper::before {
   opacity: 1;

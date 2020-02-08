@@ -23,13 +23,7 @@
 
 .progressbar li:before {
   content: '';
-  width: 14px;
-  height: 14px;
-  line-height: 14px;
   display: block;
-  color: var(--mad-red);
-  background: var(--white);
-  border-radius: 25px;
   margin: 0 auto 10px auto;
 }
 
@@ -47,23 +41,21 @@
 .progressbar li:first-child:after {
   content: none;
 }
-
-/*marking active/completed steps green*/
+/*marking active/completed steps*/
 .progressbar li.active:before, .progressbar li.active:after {
   background: var(--mad-red);
   color: var(--white);
 }
-
 .progressbar li span{
   color: var(--white);
 }
-
 
 /* M-Form Styling */
 
 .mform p.form-label{
   text-align: left !important;
   line-height: 1.4;
+  font-size: 15px;
 }
 
 .mform p.form-label.link{
@@ -155,7 +147,7 @@
 
 
 label.error{
-  display: absolute;
+  position: absolute !important;
   /* background: #F00; */
   color:var(--red);
   font-size: 13px;
