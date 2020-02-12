@@ -17,6 +17,9 @@ class MInput extends HTMLElement{
       if(!this.hasAttribute('id')){
         input.setAttribute('id',elementID);
       }
+      else{
+        input.setAttribute('id',this.getAttribute('id'));
+      }
 
       if(this.hasAttribute('required')){
         required = this.getAttribute('required');
@@ -69,6 +72,9 @@ class MRadio extends HTMLElement{
 
       if(!this.hasAttribute('id')){
         input.setAttribute('id',elementID);
+      }
+      else{
+        input.setAttribute('id',this.getAttribute('id'));
       }
 
       if(this.hasAttribute('required')){
