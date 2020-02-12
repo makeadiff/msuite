@@ -14,7 +14,9 @@ class MInput extends HTMLElement{
       input.setAttribute('class','formField');
       elementID = Math.floor((Math.random()*10000)).toString(36);
 
-      input.setAttribute('id',elementID);
+      if(!this.hasAttribute('id')){
+        input.setAttribute('id',elementID);
+      }
 
       if(this.hasAttribute('required')){
         required = this.getAttribute('required');
@@ -65,7 +67,9 @@ class MRadio extends HTMLElement{
       input.setAttribute('class','formField');
       elementID = Math.floor((Math.random()*10000)).toString(36);
 
-      input.setAttribute('id',elementID);
+      if(!this.hasAttribute('id')){
+        input.setAttribute('id',elementID);
+      }
 
       if(this.hasAttribute('required')){
         required = this.getAttribute('required');
