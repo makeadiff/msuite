@@ -134,12 +134,12 @@ class MSelect extends HTMLElement{
 
     if(this.hasAttribute('required')){
       required = this.getAttribute('required');
-      input.setAttribute('required','required');
+      select.setAttribute('required','required');
     }
 
     if(this.hasAttribute('onchange')){
       onchange = this.getAttribute('onchange');
-      input.setAttribute('onchange',onchange);
+      select.setAttribute('onchange',onchange);
     }
 
     this.appendChild(wrapper);
