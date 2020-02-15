@@ -132,6 +132,16 @@ class MSelect extends HTMLElement{
       select.setAttribute('name',name);
     }
 
+    if(this.hasAttribute('required')){
+      required = this.getAttribute('required');
+      input.setAttribute('required','required');
+    }
+
+    if(this.hasAttribute('onchange')){
+      onchange = this.getAttribute('onchange');
+      input.setAttribute('onchange',onchange);
+    }
+
     this.appendChild(wrapper);
     wrapper.appendChild(select);
     select.innerHTML = options;
