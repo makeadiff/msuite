@@ -117,7 +117,7 @@ class MSelect extends HTMLElement{
     wrapper.setAttribute('class','select');
 
     var options = this.innerHTML;
-    var id, name;
+    var id, name, required;
     this.innerHTML = '';
 
     var select = document.createElement('select');
