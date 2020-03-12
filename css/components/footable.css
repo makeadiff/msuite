@@ -559,7 +559,7 @@ div.footable-loader {
 	height: 300px;
 	position: relative;
 }
-div.footable-loader > span.fooicon {
+div.footable-loader > span.fooicon,div.footable-loader > span.icon {
 	display: inline-block;
 	opacity: 0.3;
 	font-size: 30px;
