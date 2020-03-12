@@ -4040,7 +4040,7 @@
 
 			self.$button = $('<button/>', {type: 'button', 'class': 'btn btn-primary'})
 				.on('click', { self: self }, self._onSearchButtonClicked)
-				.append($('<span/>', {'class': 'fooicon fooicon-search'}));
+				.append($('<i/>', {'class': 'icon ion-md-search'}));
 
 			self.$dropdown = $('<ul/>', {'class': 'dropdown-menu dropdown-menu-right'});
 			if (!F.is.emptyString(self.dropdownTitle)){
@@ -4190,9 +4190,9 @@
 		 */
 		setButton: function(search){
 			if (!search){
-				this.$button.children('.fooicon').removeClass('fooicon-search').addClass('fooicon-remove');
+				this.$button.children('.fooicon').removeClass('ion-md-search').addClass('ion-md-close');
 			} else {
-				this.$button.children('.fooicon').removeClass('fooicon-remove').addClass('fooicon-search');
+				this.$button.children('.fooicon').removeClass('ion-md-close').addClass('ion-md-search');
 			}
 		},
 		/**
@@ -4314,7 +4314,7 @@
 			var self = e.data.self;
 			if (self._filterTimeout != null) clearTimeout(self._filterTimeout);
 			var $icon = self.$button.children('.fooicon');
-			if ($icon.hasClass('fooicon-remove')) self.clear();
+			if ($icon.hasClass('ion-md-close')) self.clear();
 			else {
 				var query = self.$input.val();
 				if (query.length >= self.min){
@@ -4338,8 +4338,8 @@
 			self._filterTimeout = setTimeout(function(){
 				self._filterTimeout = null;
 				var $icon = self.$button.children('.fooicon');
-				if ($icon.hasClass('fooicon-remove')){
-					$icon.removeClass('fooicon-remove').addClass('fooicon-search');
+				if ($icon.hasClass('ion-md-close')){
+					$icon.removeClass('ion-md-close').addClass('ion-md-search');
 					self.addFilter('search', self.$input.val());
 					self.filter();
 				}

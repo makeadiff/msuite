@@ -39,6 +39,10 @@
 <?php include 'components/navbar.php'; ?>
     </span>
 
+    <span id="sidebar_div">
+<?php include 'components/sidebar.php'; ?>
+    </span>
+
     <div class="page">
       <div class="container">
         <div class="elements" id="usage">
