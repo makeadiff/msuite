@@ -47,7 +47,7 @@
 
           <m-input field-type="text" name="user_address" field-label="Enter Your Address" required="" value=""/></m-input>
 
-          <m-textarea name="user_address" field-label="Enter Your Address" required="" name="textarea"/></m-textarea>
+          <m-textarea name="user_address" field-label="Enter Your Address" required="" name="textarea"/>Some Random Value</m-textarea>
 
           <button type="button" class="button next"><span>Submit</span></button>
       </fieldset>

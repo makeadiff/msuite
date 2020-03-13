@@ -161,6 +161,9 @@ class MTextArea extends HTMLElement{
 
     var input = document.createElement('textarea');
     input.setAttribute('class','formField');
+    if(this.innerHTML!=''){
+      input.innerHTML = this.innerHTML;
+    }
     elementID = Math.floor((Math.random()*10000)).toString(36);
 
     if(!this.hasAttribute('id')){
