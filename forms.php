@@ -1,6 +1,6 @@
 <?php include 'global_header.php'; ?>
 <?php include 'components/navbar.php'; ?>
-<?php include 'template/forms.php'; ?>
+<?php include 'templates/forms.php'; ?>
 
 <div class="container">
   <div class="elements" id="input">
