@@ -163,6 +163,7 @@ class MTextArea extends HTMLElement{
     input.setAttribute('class','formField');
     if(this.innerHTML!=''){
       input.innerHTML = this.innerHTML;
+      this.innerHTML = '';
     }
     elementID = Math.floor((Math.random()*10000)).toString(36);
 
