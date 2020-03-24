@@ -1,0 +1,58 @@
+h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 25px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+h4{
+  font-size: 15px;
+}
+
+p{
+
+}
+
+a{
+  color: var(--cyan);
+}
+
+a:hover{
+  color: var(--cyan70);
+  text-decoration: none;
+}
+
+a.visited{
+  color: var(--cyan70);
+}
+
+/* mainheadings*/
+.main-title {
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*headings*/
+.title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--grey90);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: var(--grey70);
+}

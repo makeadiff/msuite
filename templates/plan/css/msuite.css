@@ -1,0 +1,87 @@
+/*!
+BootStrap Update for MSuite V0.0.1
+Author: Rohit Nair for Make A Difference, India
+ * Make A Difference: makeadiff.in
+ * Github: github.com/makeadiff.in
+*/
+@import "./bootstrap.css";
+@import "./components/color.css";
+@import "./components/layout.css";
+/* @import "./materialize.css"; */
+@import "./components/animation.css";
+@import "./components/input.css";
+@import "./components/button.css";
+@import "./components/navbar.css";
+@import "./components/text.css";
+@import "./components/card.css";
+@import "./components/notification.css";
+@import "./components/surveys.css";
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i&display=swap');
+@import "./components/footable.css";
+/* Ionic Icon Package */
+@import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
+/* Documentation can be found at https://ionicons.com/v4/ */
+@import "./components/icon.css";
+@import "./components/forms.css";
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Nunito', sans-serif !important; }
+.page{ width: 100%; }
+#icons i.icon {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width:500px) {
+  .elements {
+    padding: 10px;
+  }
+}
+
+
+body.dark{
+  background: var(--grey80);
+}
+
+body.night{
+  /* fallback for old browsers */
+  /* background: #2c3e50; */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to right, #2c3e50, #3498db);  */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(to right, #2c3e50, #3498db);  */
+
+  /* background: #136a8a; 
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);
+  background: linear-gradient(to right, #267871, #136a8a); */
+
+}
+
+/*  MADApp BG Color
+background: #212121;
+background: -webkit-linear-gradient(180deg, #ed1849 0%,#193330 60%, #212121 100%); 
+background: linear-gradient(180deg, #ed1849 0%,#193330 60%, #212121 100%);  
+*/
+
+
+
+
+body.light{
+  background: var(--grey10);
+  /* color: var(--black); */
+}
+
+
+.shape {
+  width:500px;
+  height:200px;
+}
+
+.shape .gradient-bg {
+  fill: url(#header-shape-gradient) #fff;
+}
+
+#header-shape-gradient {
+  --color-stop: #f12c06;
+  --color-bot: #faed34;
+}

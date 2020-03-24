@@ -85,7 +85,7 @@
         </div>
 
         <div class="elements" id="sidebar">
-          <h1>Sidebar</h1>
+          <h1>Sidebar</h1
           <div class="code"></div>
         </div>
 
