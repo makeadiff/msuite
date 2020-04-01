@@ -1,6 +1,4 @@
 <?php
-
-
   $components = [
     'navbar' => 'Navbar',
     'breadcrumb' => 'Breadcrumb',
@@ -12,7 +10,6 @@
     'nav' => 'Nav and Tabs',
     'table' => 'Tables',
   ];
-
 ?>
 
 <!DOCTYPE html>

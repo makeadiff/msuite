@@ -1,9 +1,11 @@
 /*!
+Project Name: Msuite, UI Framework
 BootStrap Update for MSuite V0.0.1
-Author: Rohit Nair for Make A Difference, India
- * Make A Difference: makeadiff.in
- * Github: github.com/makeadiff.in
+Author: Rohit Nair
+ * Github: github.com/rhit99900
 */
+
+
 @import "./bootstrap.css";
 @import "./components/color.css";
 @import "./components/layout.css";
@@ -16,7 +18,8 @@ Author: Rohit Nair for Make A Difference, India
 @import "./components/card.css";
 @import "./components/notification.css";
 @import "./components/surveys.css";
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import "./components/footable.css";
 /* Ionic Icon Package */
 @import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
@@ -25,7 +28,8 @@ Author: Rohit Nair for Make A Difference, India
 @import "./components/forms.css";
 
 html { scroll-behavior: smooth; }
-body { font-family: 'Nunito', sans-serif !important; }
+/* body { font-family: 'Nunito', sans-serif !important; } */
+body { font-family: 'Titillium Web', sans-serif !important;}
 .page{ width: 100%; }
 #icons i.icon {
   height: 30px;
@@ -38,23 +42,14 @@ body { font-family: 'Nunito', sans-serif !important; }
   }
 }
 
-
 body.dark{
-  background: var(--grey80);
+  /* background: var(--grey80); */
 }
 
 body.night{
-  /* fallback for old browsers */
-  /* background: #2c3e50; */
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: -webkit-linear-gradient(to right, #2c3e50, #3498db);  */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* background: linear-gradient(to right, #2c3e50, #3498db);  */
-
-  /* background: #136a8a; 
-  background: -webkit-linear-gradient(to right, #267871, #136a8a);
-  background: linear-gradient(to right, #267871, #136a8a); */
-
+  background: #212121;
+  /* background: -webkit-linear-gradient(180deg, #ed1849 0%,#193330 60%, #212121 100%); 
+  background: linear-gradient(180deg, #ed1849 0%,#193330 60%, #212121 100%);   */
 }
 
 /*  MADApp BG Color
@@ -63,23 +58,13 @@ background: -webkit-linear-gradient(180deg, #ed1849 0%,#193330 60%, #212121 100%
 background: linear-gradient(180deg, #ed1849 0%,#193330 60%, #212121 100%);  
 */
 
-
-
-
-body.light{
-  background: var(--grey10);
+body.light{background: var(--grey10);
   /* color: var(--black); */
 }
 
 
-.shape {
-  width:500px;
-  height:200px;
-}
-
-.shape .gradient-bg {
-  fill: url(#header-shape-gradient) #fff;
-}
+.shape {width:500px;height:200px;}
+.shape .gradient-bg {fill: url(#header-shape-gradient) #fff;}
 
 #header-shape-gradient {
   --color-stop: #f12c06;

@@ -7,3 +7,29 @@
   background: var(--grey30);
   color: var(--grey80);
 }
+
+/* Flex Container  */
+.flex-container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.w-100{ width: 100% !important; }
+.center { text-align: center !important; }
+.no-margin { margin: 0px !important; }
+
+/* Box for Key Progress Indicators kpi-box  */
+.kpi-box { padding: 0 0 0 20px;}
+.kpi-box:last-child{ padding: 0 20px 0 20px;}
+.kpi-box .data{
+  width: 100%;
+  padding: 10px;
+  height: 100px;
+  border-radius: 5px;
+  background: #485563;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

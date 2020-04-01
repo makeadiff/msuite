@@ -160,3 +160,21 @@ label.label-box{
   width: 100%;
   font-weight: 400;
 }
+
+/* Popup Box  */
+.popup-header{
+  width: 500px;
+  min-height: 20px;  
+  padding: 20px;
+  background: #6441A5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 5px 5px 0 0;
+}
+.popup-box{
+  width: 500px;
+  min-height: 500px;
+  background: var(--white);
+  padding: 50px;
+  border-radius: 0 0 5px 5px;
+}

@@ -1,17 +1,19 @@
 /* General Setting Applicable for All Themes */
 
-.fixed-left{ width: 20%; float: left;   height: 100vh; }
-.fixed-right{ width: 80%; float: right; overflow: scroll; height: 100vh; }
+.fixed-left{ width: 300px; float: left;   height: 100vh; }
+.fixed-right{ width: calc(100% - 300px); float: right; overflow: scroll; height: 100vh; }
+
+.fixed-left.collapsed{ width: 100px; float: left;   height: 100vh; }
+.fixed-right.collapsed { width: calc(100% - 100px); loat: right; overflow: scroll; height: 100vh; }
 
 .navbar{
   position: sticky;
   width: 100%;
   margin-bottom: 20px;
+  padding: 5px 10px;
 }
 
-.navbar-toggler{
-  border: none;
-}
+.navbar-toggler{ border: none; }
 
 .profile_image{
   width: 100px;
@@ -23,15 +25,13 @@
   overflow: hidden;
   background: url("https://picsum.photos/seed/picsum/40/40");
 }
-
-.dropdown-menu{
-  border: none;
-}
-
+.profile_image.collapsed{width: 50px; height: 50px; margin-top: 40px;}
 .profile_image img{ width: 100%; }
+.user_name{text-align: center; color: var(--white); margin-bottom: 0px;}
+.user_profile{font-size: 10px; margin-top: 0px; font-style: italic; overflow-x: hidden; text-align: center; color: var(--grey20)}
 
-.user_name{ text-align: center; color: var(--white); margin-bottom: 0px;}
-.user_profile{ font-size: 10px; margin-top: 0px; font-style: italic; overflow-x: hidden; text-align: center; color: var(--grey20)}
+.dropdown-menu{border: none;}
+
 
 /* Sidebar CSS Styling */
 
@@ -50,24 +50,19 @@
 
 .sidebar .nav {
   position: relative;
-  text-align: right;  
-  /* -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); */
+  text-align: left;    
   font-weight: bold;
 }
 
-.sidebar .toggle{
+.sidebar .sidebar-toggle{
   position: absolute;
   top:10px;
   right:10px;
   cursor: pointer;
 }
 
-.sidebar.collapsed{
-  width: 80px;
-  overflow: hidden;
-}
-
+.sidebar.collapsed{width: 100px; overflow: hidden;}
+.sidebar.collapsed .collapsable{ display: none; }
 .sidebar.top-left{ top: 0px; left: 0px; }
 .sidebar.top-right{ top: 0px; right: 0px; }
 
@@ -79,7 +74,12 @@
 /* Dark Theme Elements Styling--------------------------------------------------------------------- */
 .dark .navbar, .night .navbar{
   background: var(--grey90);
-  border-bottom: 2px solid var(--mad-red);
+  /* border-bottom: 2px solid var(--mad-red); */
+  /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
+  background: #6441A5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .dark .navbar-toggler-icon {
@@ -151,8 +151,11 @@
 .navbar i.icon{ font-size: 15px; }
 .navbar li{ list-style: none; }
 
-.dark .sidebar{ background: var(--teal80);}
-
+/* .dark .sidebar{ background: var(--teal80);} */
+/* .dark .sidebar{ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); } */
+.dark .sidebar{ background-image: linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%); }
+.dark .sidebar { background-image: linear-gradient(to top, #09203f 0%, #537895 100%); }
+.dark .sidebar { background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); }
 
 .nav ul {
   list-style: none;
@@ -232,7 +235,7 @@
 @media (max-width:500px){
   .sidebar {
     position: fixed;
-    width: 60%;
+    width: 60px;
     z-index: 10;
   }
 }

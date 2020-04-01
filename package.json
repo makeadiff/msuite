@@ -1,7 +1,7 @@
 {
-  "name": "webpack",
+  "name": "MSuite",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Usage Guideline",
   "main": "js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/makeadiff/msuite/issues"
   },
-  "homepage": "https://github.com/makeadiff/msuite#readme"
+  "homepage": "https://github.com/makeadiff/msuite#readme",
+  "keywords": [],
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
 }
