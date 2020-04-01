@@ -13,7 +13,7 @@ MSuite has built-in Custom HTML Elements namely
 
 Usage of Custom Elements
 
-#### MInput (<m-input/>)
+#### MInput (```<m-input/>```)
 ```
 <m-input 
   field-type="text" 
