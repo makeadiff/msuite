@@ -49,3 +49,7 @@ button.close{
   background: var(--light-green40);
   color: var(--grey80);
 }
+
+.dropdown-menu.notification { width: 200px; }
+.dark .dropdown-menu.notification{ background: var(--white); }
+.dark .dropdown-menu.notification .dropdown-item{ color: var(--grey90); }

@@ -31,17 +31,20 @@
                 </div>
                 <nav class="nav">
                   <ul>
-                    <li class="active"><a href="#">
-                        <i class="icon ion-md-home"></i> <span class="collapsable">Welcome</span>
+                    <li class="active"><a href="./index.html">
+                        <i class="icon ion-md-grid"></i> <span class="collapsable">Dashboard</span>
+                    </a></li>
+                    <li><a href="./projects.html">
+                        <i class="icon ion-md-code-working"></i> <span class="collapsable">Projects</span>
                     </a></li>
                     <li><a href="#">
-                        <i class="icon ion-md-home"></i> <span class="collapsable">Projects</span>
+                        <i class="icon ion-md-return-right"></i> <span class="collapsable">My Tasks</span>
                     </a></li>
                     <li><a href="#">
-                        <i class="icon ion-md-home"></i> <span class="collapsable">My Tasks</span>
+                        <i class="icon ion-md-calendar"></i> <span class="collapsable">Calendar</span>
                     </a></li>
                     <li><a href="#">
-                        <i class="icon ion-md-home"></i> <span class="collapsable">Todo</span>
+                        <i class="icon ion-md-square-outline"></i> <span class="collapsable">Todo</span>
                     </a></li>
                   </ul>
                 </nav>
@@ -57,7 +60,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">                   
                     <li class="nav-item active">
-                    <a class="nav-link" href="./"> <i class="icon ion-md-home"></i> Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./"> <i class="icon ion-md-home"></i> Home <span class="sr-only">(current)</span></a>
                     </li>                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,32 +73,217 @@
                         </div>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">                                                          
-                </form>
-                </div>
+                <div class="my-2 my-lg-0">      
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon ion-md-notifications"></i>
+                        </a>
+                        <div class="dropdown-menu right notification" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item"> <i class="icon ion-md-arrow-dropright"></i>You are hired. </a>
+                            <a class="dropdown-item"> <i class="icon ion-md-arrow-dropright"></i>You are fired. </a>
+                        </div>
+                    </li>                                                   
+                </div>                
             </nav>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col kpi-box">
-                        <div class="data">
-                            <h2>Todos</h2>
-                        </div>
+            <div class="panel">
+                <div class="row">                
+                    <div class="col-4 today-container">
+                        <div class="row panel-component">
+                            <div class="col-12">
+                                <h3>Hello, Rohit</h3>                                
+                                <ul class="nav nav-tabs" id="tasks">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#task-active" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="true">
+                                            Active
+                                        </a>
+                                    </li>                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#task-complete" role="tab" aria-controls="nav-home" aria-selected="true">
+                                            Completed
+                                        </a>
+                                    </li>                                    
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="task-active" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="today-tasks">
+                                            <h2>Overdue</h2>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2 card-marker">
+                                                        <div>
+                                                            <i class="icon ion-md-time"></i>
+                                                            <p class="task-time">10:00</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="card-body task-item">
+                                                            This is some text within a card body.
+                                                        </div>
+                                                    </div>
+                                                </div>                                        
+                                            </div>
+                                            <h2>Today</h2>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2 card-marker">
+                                                        <i class="icon ion-md-arrow-dropup"></i>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="card-body task-item">
+                                                            This is some text within a card body.
+                                                        </div>
+                                                    </div>
+                                                </div>                                        
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="tab-pane" id="task-complete" role="tabpanel" aria-labelledby="profile-tab">
+
+                                    </div>                                    
+                                </div>                                                       
+                            </div>
+                        </div>                                                
                     </div>
-                    <div class="col kpi-box">
-                        <div class="data">
-                            <h2>Todos</h2>
+                    <div class="col-8 dashboard-container">
+                        <div class="row panel-component">
+                            <div class="col">
+                                <h3>Hello, Rohit</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos magnam dicta aperiam cumque exercitationem quam repellendus sapiente quisquam! Autem suscipit impedit natus qui sed, illum quam laborum cumque consectetur.
+                                </p>                                
+                            </div>
                         </div>
-                    </div>
-                    <div class="col kpi-box">
-                        <div class="data">
-                            <h2>Todos</h2>
+                        <div class="row panel-component">
+                            <div class="col-3 kpi-box">
+                                <div class="data">
+                                    <h3>Pending Tasks</h3>
+                                    <h1 class=kpi-data>
+                                        40
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-3 kpi-box">
+                                <div class="data">
+                                    <h3>Pending Tasks</h3>
+                                    <h1 class=kpi-data>
+                                        40
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-3 kpi-box">
+                                <div class="data">
+                                    <h3>Pending Tasks</h3>
+                                    <h1 class=kpi-data>
+                                        40
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-3 kpi-box">
+                                <div class="data">
+                                    <h3>Pending Tasks</h3>
+                                    <h1 class=kpi-data>
+                                        40
+                                    </h2>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col kpi-box">
-                        <div class="data">
-                            <h2>Todos</h2>
+                        <hr/>
+                        <h2>Projects</h2>
+                        <div class="project-container">
+                            <div class="project-item">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h2>Mercy Campaign</h2>
+                                        <p class="project-timeline">Aug, 2020 - Jan, 2021</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="project-teams">Team Mates:</p>
+                                        <div class="project-members">
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h2>Mercy Campaign</h2>
+                                        <p class="project-timeline">Aug, 2020 - Jan, 2021</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="project-teams">Team Mates:</p>
+                                        <div class="project-members">
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h2>Mercy Campaign</h2>
+                                        <p class="project-timeline">Aug, 2020 - Jan, 2021</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="project-teams">Team Mates:</p>
+                                        <div class="project-members">
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h2>Mercy Campaign</h2>
+                                        <p class="project-timeline">Aug, 2020 - Jan, 2021</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="project-teams">Team Mates:</p>
+                                        <div class="project-members">
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                            <div class="members-image">
+                                                <img src="https://picsum.photos/id/237/60/60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="center">
+                                <button class="button"><span>Create Project</span></button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -103,7 +291,7 @@
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>    
+    <script src='./js/bootstrap.min.js' type="text/javascript"></script> 
     <script src="./js/footable.js" type="text/javascript"></script>
     
     <!-- Custom JS Files -->

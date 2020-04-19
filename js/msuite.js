@@ -14,7 +14,7 @@ class MInput extends HTMLElement{
       elementID = Math.floor((Math.random()*10000)).toString(36);
 
       if(!this.hasAttribute('id')){
-        input.setAttribute('id',elementID);        
+        input.setAttribute('id',elementID);
       }
       else{
         elementID = this.getAttribute('id');
@@ -53,7 +53,7 @@ class MInput extends HTMLElement{
         this.removeAttribute('name');
       }
 
-      this.removeAttribute('field-type');      
+      this.removeAttribute('field-type');
     }
     this.appendChild(wrapper);
     wrapper.appendChild(input);
@@ -218,6 +218,90 @@ class MTextArea extends HTMLElement{
   }
 }
 
+// <div class="checkbox">
+//   <label>
+//     <input type="checkbox" checked="checked"/><i class="helper"></i>I'm the label from a checkbox
+//   </label>
+// </div>
+
+class MCheckbox extends HTMLElement{
+  constructor(){
+    super();
+    var wrapper = document.createElement('div');
+    wrapper.setAttribute('class','checkbox');
+
+    var fieldLabel,elementID,required,name,value;
+    var label = document.createElement('label');
+    var input = document.createElement('input');
+    var helper = document.createElement('i');
+
+    input.setAttribute('type','checkbox');
+    helper.setAttribute('class','helper');
+
+    if(this.hasAttribute('field-label')){
+      var textLabel = this.getAttribute('field-label');
+    }
+    else{
+      var textLabel = '';
+    }
+
+    if(this.hasAttribute('name')){
+      
+    }
+
+    if(this.hasAttribute('checked')){
+      input.setAttribute('checked','checked');
+    }
+
+    if(this.hasAttribute('required')){
+      required = this.getAttribute('required');
+      input.setAttribute('required','required');
+    }
+
+    this.appendChild(wrapper);
+    wrapper.appendChild(label);
+    label.appendChild(input);
+    label.appendChild(helper);
+    label.innerHTML += textLabel;
+  }
+}
+
+class MMultiSelect extends HTMLElement {
+  constructor() {
+    super();
+    var wrapper = document.createElement('div');
+    wrapper.setAttribute('class','multi-select');
+
+    var dropdownButton = document.createElement('button');
+    dropdownButton.setAttribute('class','dropdown-toggle');
+    dropdownButton.setAttribute('type','button');
+    dropdownButton.setAttribute('data-toggle','dropdown');
+    dropdownButton.setAttribute('aria-haspopup','true');
+    dropdownButton.setAttribute('aria-expanded','false');
+
+
+    if(this.hasAttribute('field-label')){
+      var buttonText = document.createElement('p');
+      buttonText.setAttribute('class','form-label');
+      buttonText.innerHTML = this.getAttribute('field-label');
+      wrapper.appendChild(buttonText);
+    }
+
+    this.appendChild(wrapper);
+    wrapper.appendChild(dropdownButton);
+    // console.log(this.children);
+  }
+}
+
+var multiSelectOptions = document.querySelector('li.options');
+let optionSelect = (element) => {
+  // element.classList.toggle('active');
+  console.log(element);
+}
+if(multiSelectOptions){
+  multiSelectOptions.addEventListener('click',optionSelect);
+}
+
 var progressbar = document.getElementsByClassName('progressbar');
 if(progressbar.length!=0){
   var fieldset_count = progressbar[0].children.length;
@@ -228,7 +312,14 @@ if(progressbar.length!=0){
 }
 
 
+
+
+
+
+
 customElements.define('m-input',MInput);
 customElements.define('m-select',MSelect);
 customElements.define('m-radio',MRadio);
 customElements.define('m-textarea',MTextArea);
+customElements.define('m-checkbox',MCheckbox);
+customElements.define('m-multiselect',MMultiSelect);

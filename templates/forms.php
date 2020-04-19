@@ -43,11 +43,32 @@
             </label>
           </div>
 
+          <m-checkbox field-label="Checkbox Text" required>
+          </m-checkbox>
+
           <m-input field-type="date" name="user_birthday" field-label="Your Date of Birth" value="" required="" onchange="req(this);" max="2003-01-01"></m-input>
-
           <m-input field-type="text" name="user_address" field-label="Enter Your Address" required="" value=""/></m-input>
-
           <m-textarea name="user_address" field-label="Enter Your Address" required="" name="textarea"/>Some Random Value</m-textarea>
+
+          <!-- <p class="form-label">Select Options</p>
+          <div class="multi-select">
+            <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="badge selected-options">Option 1<i class="icon remove-option ion-md-close"></i></span>
+              <span class="badge selected-options">Option 2<i class="icon remove-option ion-md-close"></i></span>
+            </button>
+            <div class="dropdown-menu multi-select-options">
+              <li class="options active">
+                <label><input type="checkbox" checked="checked"/> Option 1
+              </li>
+              <li class="options">
+                <input type="checkbox" checked="checked"/> Option 2</label>
+              </li>
+            </div>
+          </div> -->
+
+          <m-multiselect field-label="Select City">
+            <option value="10">Some City</option>
+          </m-multiselect>
 
           <button type="button" class="button next"><span>Submit</span></button>
       </fieldset>
