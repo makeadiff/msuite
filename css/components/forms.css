@@ -97,9 +97,9 @@
 
 .mform .col-sm-3 input, .mform .col-sm-2 input, .mform .col-sm-12 input{
   text-align: left;
-  width: auto;
+  width: 100%;
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
 }
 
 
@@ -117,7 +117,7 @@
 
 /*Hide all except first fieldset*/
 .mform fieldset:not(:first-of-type) {
-    /* display: none; */
+    display: none;
 }
 
 .mform input.checkbox{

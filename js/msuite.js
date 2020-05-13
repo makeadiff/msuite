@@ -229,14 +229,22 @@ class MCheckbox extends HTMLElement{
     super();
     var wrapper = document.createElement('div');
     wrapper.setAttribute('class','checkbox');
-
-    var fieldLabel,elementID,required,name,value;
+    var fieldLabel,elementID,required,name,value,className,wrapperClassName,onchange, onclick;
     var label = document.createElement('label');
     var input = document.createElement('input');
     var helper = document.createElement('i');
 
     input.setAttribute('type','checkbox');
     helper.setAttribute('class','helper');
+
+    if(this.hasAttribute('wrapper-class')){
+      wrapperClassName = this.getAttribute('wrapper-class');
+      var classList = wrapperClassName.split(" ");
+      classList.forEach((item, i) => {
+        wrapper.classList.add(item);
+      });
+      this.removeAttribute('wrapper-class');
+    }
 
     if(this.hasAttribute('field-label')){
       var textLabel = this.getAttribute('field-label');
@@ -246,16 +254,52 @@ class MCheckbox extends HTMLElement{
     }
 
     if(this.hasAttribute('name')){
-      
+      input.setAttribute('name',this.getAttribute('name'));
+      this.removeAttribute('name');
+    }
+    else{
+      return;
     }
 
     if(this.hasAttribute('checked')){
       input.setAttribute('checked','checked');
+      this.removeAttribute('checked');
+    }
+
+    if(this.hasAttribute('onchange')){
+      onchange = this.getAttribute('onchange');
+      input.setAttribute('onchange',onchange);
+      this.removeAttribute('onchange');
+    }
+
+    if(this.hasAttribute('onclick')){
+      onclick = this.getAttribute('onclick');
+      input.setAttribute('onclick',onclick);
+      this.removeAttribute('onclick');
+    }
+
+    if(this.hasAttribute('value')){
+      value = this.getAttribute('value');
+      input.setAttribute('value',value);
+      this.removeAttribute('value');
     }
 
     if(this.hasAttribute('required')){
       required = this.getAttribute('required');
       input.setAttribute('required','required');
+      this.removeAttribute('required');
+    }
+
+    if(this.hasAttribute('class')){
+      className = this.getAttribute('class');
+      input.setAttribute('class',className);
+      this.removeAttribute('class');
+    }
+
+    if(this.hasAttribute('id')){
+      elementID = this.getAttribute('id');
+      input.setAttribute('id',elementID);
+      this.removeAttribute('id');
     }
 
     this.appendChild(wrapper);
